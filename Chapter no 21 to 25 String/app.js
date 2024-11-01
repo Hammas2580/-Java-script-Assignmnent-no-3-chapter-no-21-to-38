@@ -151,20 +151,37 @@
 
 // ============= question no 16 ============
 
-var str = "university in karachi";
-var arr = str.split(" ");
+// var str = "university in karachi";
+// var arr = str.split(" ");
 
-for (var i=0; i < arr.length; i++){
-    console.log(arr[i])
+// for (var i=0; i < arr.length; i++){
+//     console.log(arr[i])
+// }
+
+// ============= question no 17 ============
+
+// var user = prompt("enter your city name");
+// var res = user.charAt(user.length - 1);
+// console.log(res);
+
+// ============= question no 18 ============
+
+var str = "The quick brown fox jumps over the lazy dog";
+var normalizedStr = str.toLowerCase(); // Convert to lowercase
+var words = normalizedStr.split(" "); // Split string into words
+
+var count = 0; // Initialize count to 0
+
+// Loop through the words to count occurrences of "the"
+for (var i = 0; i < words.length; i++) {
+    if (words[i] === "the") {
+        count++; // Increment count if the word is "the"
+    }
 }
 
+console.log("Occurrences of 'the': " + count); // Output the count
 
-var str = "university in karachi"; // Given string
 
-// Convert the string to an array using split method
-var arr = str.split(" "); // Splitting by space to get words in an array
 
-// Display each element of the array in the console
-for (var i = 0; i < arr.length; i++) {
-    console.log(arr[i]); // Yeh ab array ke har word ko print karega
-}
+
+
